@@ -1,6 +1,4 @@
-Jan 30, 2025 ITAI 2372 AI Applications
-
-Finance industry.
+AI Applications in the Finance Industry:
 
 Use Case of AI in the finance Industry: 
 
@@ -30,9 +28,9 @@ Categories:
 3) Personalized financial advice: AI looks at your spending 			and suggests tailored budgeting or investment tips. 			Example: Your banking app recommends 					automatically moving $200 a month into a savings 			account based on your spending habits. 
 
 
+Jan 30, 2025.
 
 
-*To be continued in next class
   
 
 
