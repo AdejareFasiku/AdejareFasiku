@@ -73,8 +73,6 @@ My computer-science journey has crystallized into a passion for AI. I’m now se
 <img src="https://img.shields.io/badge/-AWS-232F3E?style=for-the-badge&logo=Amazon%20AWS&logoColor=white"/>
 <img src="https://img.shields.io/badge/-ServiceNow-43B02A?style=for-the-badge&logo=ServiceNow&logoColor=white"/>
 <img src="https://img.shields.io/badge/-Microsoft%20Office-D83B01?style=for-the-badge&logo=Microsoft%20Office&logoColor=white"/>
-<img src="https://img.shields.io/badge/-Security%2B-FF0000?style=for-the-badge&logo=CompTIA&logoColor=white"/>
-<img src="https://img.shields.io/badge/-Network%2B-007ACC?style=for-the-badge&logo=CompTIA&logoColor=white"/>
 <img src="https://img.shields.io/badge/-A%2B-4D4D4D?style=for-the-badge&logo=CompTIA&logoColor=white"/>
 </div>
 
