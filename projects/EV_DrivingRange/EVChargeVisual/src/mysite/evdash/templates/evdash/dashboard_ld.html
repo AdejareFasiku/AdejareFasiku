@@ -1,0 +1,119 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>EV Charging Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gray-50">
+  <div class="container mx-auto px-4 py-8">
+    <header class="text-center mb-8">
+      <h1 class="text-4xl font-bold">Electric Vehicle Charging Analytics</h1>
+      <p class="text-gray-600">Visualizing relationships between charging patterns, vehicle models, and environmental factors</p>
+    </header>
+
+    <!-- Summary Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+      <div class="bg-white p-6 rounded-xl shadow-md">
+        <h3 class="text-gray-500">Vehicle Models</h3>
+        <p class="text-2xl font-bold">{{ model_labels|length }}</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md">
+        <h3 class="text-gray-500">Charging Stations</h3>
+        <p class="text-2xl font-bold">{{ station_count }}</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md">
+        <h3 class="text-gray-500">Avg Energy (kWh)</h3>
+        <p class="text-2xl font-bold">{{ avg_energy_all|floatformat:1 }}</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md">
+        <h3 class="text-gray-500">Avg Duration (hrs)</h3>
+        <p class="text-2xl font-bold">{{ avg_duration_all|floatformat:1 }}</p>
+      </div>
+    </div>
+
+    <!-- Charts Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+      <div class="bg-white p-6 rounded-xl shadow-md">
+        <canvas id="modelChart"></canvas>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md">
+        <canvas id="dayChart"></canvas>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md">
+        <canvas id="chargerChart"></canvas>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md">
+        <canvas id="socChart"></canvas>
+      </div>
+    </div>
+
+    <!-- City Charts -->
+    <div class="bg-white p-6 rounded-xl shadow-md mb-12">
+      <canvas id="cityEnergyChart"></canvas>
+      <canvas id="cityCostChart" class="mt-6"></canvas>
+    </div>
+
+    <!-- Data Table -->
+    <table class="min-w-full divide-y divide-gray-200">
+      <thead class="bg-gray-50">
+        <tr>
+          <th>User ID</th><th>Vehicle</th><th>Location</th><th>Energy</th><th>Duration</th><th>Cost</th><th>Charger</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for s in display_sessions %}
+        <tr>
+          <td>{{ s.user_id }}</td>
+          <td>{{ s.vehicle_model }}</td>
+          <td>{{ s.location }}</td>
+          <td>{{ s.energy|floatformat:2 }}</td>
+          <td>{{ s.duration|floatformat:2 }} hrs</td>
+          <td>${{ s.cost|floatformat:2 }}</td>
+          <td>{{ s.charger }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Chart.js Init -->
+  <script>
+    new Chart(document.getElementById('modelChart'), {
+      type: 'bar',
+      data: { labels: {{ model_labels|safe }}, datasets: [{ label:'Avg Energy', data: {{ model_data|safe }} }] }
+    });
+
+    new Chart(document.getElementById('dayChart'), {
+      type: 'line',
+      data: { labels: {{ days|safe }}, datasets: [{ label:'Avg Duration', data: {{ day_data|safe }} }] }
+    });
+
+    new Chart(document.getElementById('chargerChart'), {
+      type: 'radar',
+      data: { labels: {{ charger_labels|safe }}, datasets: [{ label:'Avg Rate', data: {{ charger_data|safe }} }] }
+    });
+
+    new Chart(document.getElementById('socChart'), {
+      type: 'scatter',
+      data: { datasets: [
+        { label:'Start SOC', data: {{ start_soc|safe }} },
+        { label:'End SOC',   data: {{ end_soc|safe }} }
+      ] }
+    });
+
+    new Chart(document.getElementById('cityEnergyChart'), {
+      type:'doughnut',
+      data: { labels: {{ city_labels|safe }}, datasets:[{ data: {{ city_energy|safe }} }] }
+    });
+
+    new Chart(document.getElementById('cityCostChart'), {
+      type:'bar',
+      data: { labels: {{ city_labels|safe }}, datasets:[{ data: {{ city_cost|safe }} }] }
+    });
+  </script>
+</body>
+</html>
