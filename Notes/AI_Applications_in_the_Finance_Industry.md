@@ -1,8 +1,4 @@
-Feb 6, 2025 ITAI 2372 AI Applications
-
-Feb 6, 2025
-
-Finance Industry Cont:
+Feb 6, 2025 AI Applications in the Finance Industry Cont:
 
 In modern finance, AI is used to detect fraud, assess risks, help leaders make investment decisions, and improve strategic planning. Despite its benefits, there are still unresolved issues and challenges, such as ethical concerns, bias, and data security.
 
