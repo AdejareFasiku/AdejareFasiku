@@ -1,4 +1,4 @@
-Feb 6, 2025 AI Applications in the Finance Industry Cont:
+AI Applications in the Finance Industry Cont:
 
 In modern finance, AI is used to detect fraud, assess risks, help leaders make investment decisions, and improve strategic planning. Despite its benefits, there are still unresolved issues and challenges, such as ethical concerns, bias, and data security.
 
@@ -73,6 +73,8 @@ Example: A targeted hack on an AI-driven credit card application service could l
 
 5. Data Security and Confidentiality are at stake: With AI handling so much personal data, ensuring robust protection against unauthorized access becomes increasingly difficult.
 Example: Even routine data transfers for model training could expose confidential client details if not properly encrypted.
+
+Feb 6, 2025.
   
 
 
