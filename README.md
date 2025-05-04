@@ -1,13 +1,27 @@
-# Hello, I'm Adejare Fasiku
-<a href="https://linkedin.com"><img src="https://img.shields.io/badge/-LinkedIn-0072b1?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+# Hello, I’m Adejare Fasiku  
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0072b1?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/adejarefasiku)  
 
 I am an Artificial Intelligence undergraduate equipped with strong technical skills, a proven ability, and a dedication to solving complex problems.
 
-## Objective
+---
 
-My journey in computer science has led me to develop a passion for artificial intelligence, and I am now eager to transition into this field, specifically aiming to join an AI team as an entry level machine learning engineer.
+## 📑 Table of Contents
+1. [About & Objective](#about--objective)  
+2. [Skills & Projects](#skills--projects)  
+3. [Tools & Technologies](#tools--technologies)  
+4. [Certifications](#certifications)  
+5. [Projects](#projects)  
+6. [Contact](#contact)  
 
-## Skills
+---
+
+## About & Objective
+My computer-science journey has crystallized into a passion for AI. I’m now seeking an entry-level machine-learning engineer role where I can apply data-driven rigor and production-grade coding skills.
+
+---
+
+
+## Skills & Projects
 
 | Skill / Tool                                  | Associated Project                  | What I did / Outcome                                                                    |
 |-----------------------------------------------|-------------------------------------|-----------------------------------------------------------------------------------------|
@@ -15,7 +29,11 @@ My journey in computer science has led me to develop a passion for artificial in
 | Python, pandas, NumPy · SQL                   | Real Time Fraud Detection Pipeline  | Cleaned & engineered 25GB of transaction logs cut model training time by 40%.           |
 | scikit-learn (classical ML)                   | Fraud Detection Pipeline            | Tuned RandomForest/Isolation Forest; pushed ROC-AUC from 0.81 → 0.94.                   |
 
-## Tools
+
+
+---
+
+## Tools & Technologies
 | Category                          | Tools / Libraries / Models                  | Typical Use in my Projects                                                                         |
 |-----------------------------------|---------------------------------------------|----------------------------------------------------------------------------------------------------|
 | Programming & Core Data Handling  | Python · Pandas · NumPy · Django · SQL      | Data ingestion, cleansing, feature engineering, website development                                |
@@ -24,36 +42,54 @@ My journey in computer science has led me to develop a passion for artificial in
 | Financial & Time-Series Analytics | TA-Lib                                      | Technical-indicator calculations for FX datasets                                                   |
 | Streaming / Deployment            | Nginx · Gunicorn · WebSocket                | Nginx: proxy & assets server, Gunicorn: runs Django API, WebSocket: real time trading alerts.      |
 
-### Network
+### Programming & Data  
 <div>
-    <img src="https://img.shields.io/badge/-Wireshark-1679A7?&style=for-the-badge&logo=Wireshark&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Suricata-EF3B2D?&style=for-the-badge&logo=Suricata&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Zeek-777BB4?&style=for-the-badge&logo=Zeek&logoColor=white" />
+<img src="https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/-pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
+<img src="https://img.shields.io/badge/-NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
+<img src="https://img.shields.io/badge/-Django-092E20?style=for-the-badge&logo=django&logoColor=white"/>
+<img src="https://img.shields.io/badge/-SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white"/>
 </div>
 
-### Endpoint
+### Machine Learning  
 <div>
-    <img src="https://img.shields.io/badge/-Microsoft_Defender_for_Endpoint-00A4EF?&style=for-the-badge&logo=Microsoft&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Velociraptor-4B275F?&style=for-the-badge&logo=Velociraptor&logoColor=white" />
+<img src="https://img.shields.io/badge/-scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white"/>
+<img src="https://img.shields.io/badge/-TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white"/>
+<img src="https://img.shields.io/badge/-PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white"/>
 </div>
 
-### SIEM
+### DevOps & Deployment  
 <div>
-    <img src="https://img.shields.io/badge/-Microsoft_Sentinel-0078D4?&style=for-the-badge&logo=Microsoft&logoColor=white" />
-    <img src="https://img.shields.io/badge/-AWS-FF9900?style=for-the-badge&logo=Amazon%20AWS&logoColor=white"/>
+<img src="https://img.shields.io/badge/-Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white"/>
+<img src="https://img.shields.io/badge/-Gunicorn-499848?style=for-the-badge&logo=gunicorn&logoColor=white"/>
+<img src="https://img.shields.io/badge/-WebSocket-0081BC?style=for-the-badge&logo=websocket&logoColor=white"/>
+<img src="https://img.shields.io/badge/-AWS-232F3E?style=for-the-badge&logo=Amazon%20AWS&logoColor=white"/>
 </div>
+
+---
 
 ## Certifications
 <div>
-    <!-- AWS Certified -->
-    <img src="https://img.shields.io/badge/-AWS-232F3E?style=for-the-badge&logo=Amazon%20AWS&logoColor=white" />
-    <!-- ServiceNow Certified -->
-    <img src="https://img.shields.io/badge/-ServiceNow-43B02A?style=for-the-badge&logo=ServiceNow&logoColor=white" />
-    <!-- Microsoft Office Certified -->
-    <img src="https://img.shields.io/badge/-Microsoft%20Office-D83B01?style=for-the-badge&logo=Microsoft%20Office&logoColor=white" />
+<img src="https://img.shields.io/badge/-AWS-232F3E?style=for-the-badge&logo=Amazon%20AWS&logoColor=white"/>
+<img src="https://img.shields.io/badge/-ServiceNow-43B02A?style=for-the-badge&logo=ServiceNow&logoColor=white"/>
+<img src="https://img.shields.io/badge/-Microsoft%20Office-D83B01?style=for-the-badge&logo=Microsoft%20Office&logoColor=white"/>
+<img src="https://img.shields.io/badge/-Security%2B-FF0000?style=for-the-badge&logo=CompTIA&logoColor=white"/>
+<img src="https://img.shields.io/badge/-Network%2B-007ACC?style=for-the-badge&logo=CompTIA&logoColor=white"/>
+<img src="https://img.shields.io/badge/-A%2B-4D4D4D?style=for-the-badge&logo=CompTIA&logoColor=white"/>
 </div>
 
+---
+
 ## Projects
-- Web Dev – Production Django website for businesses. Example: CornerstoneASC.co.uk – For a UK after‑school club, with parent‑portal login, online enrolment, and an admin CMS; live since 2019.
-- EV-Charging Analytics Dashboard - Ingests CSV uploads, stores data in PostgreSQL, and renders interactive charts & KPIs; fully responsive.
-- Video-Chat Platform – Leveraged Agora SDK, Django Channels, and WebRTC to deliver low‑latency video rooms with screen‑share and JWT‑based room security.
+- **Web Dev**  
+  – CornerstoneASC.co.uk: Production Django site for a UK after-school club; parent portal, online enrolment, admin CMS; live since 2019.  
+- **EV-Charging Analytics Dashboard**  
+  – Ingests CSV uploads, stores data in PostgreSQL, and renders interactive charts & KPIs; fully responsive.  
+- **Video-Chat Platform**  
+  – Leveraged Agora SDK, Django Channels, and WebRTC for low-latency video rooms with screen-share and JWT-based security.  
+
+---
+
+## Contact
+- GitHub: [github.com/adejarefasiku/itai-2372-portfolio](https://github.com/AdejareFasiku/AdejareFasiku.git)
+- Email: [Adejare.Fasiku@gmail.com](mailto:Adejare.Fasiku@gmail.com)
